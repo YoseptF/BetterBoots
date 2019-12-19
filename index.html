@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/betterBoots.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Better than bootstrap</title>
 </head>
+
 <body>
     <main class="container-fluid">
-        <div class="navbar">
-            <div class="nav-logo">
-                <a href="javascript:void(0);">
-                    <img class="logo-img" src="https://www.theodinproject.com/assets/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg" alt="odin project logo">
-                    <span class="logo-text"></span>
-                </a>
+        <header>
+            <div class="headerWrapper container-md row j-between margin-center">
+                <div class="nav-logo">
+                    <a href="javascript:void(0);">
+                        <img class="logo-img"
+                            src="https://www.theodinproject.com/assets/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg"
+                            alt="odin project logo">
+                        <span class="logo-text"></span>
+                    </a>
+                </div>
+                <nav class="navbar d-flex a-center j-end col-8 margin-auto">
+                    <button class="d-none"></button>
+                    <ul class="d-flex j-end">
+                        <li><a href="javascript:void(0);" class="t-cap">Curriculum</a></li>
+                        <li><a href="javascript:void(0);" class="t-cap">Community</a></li>
+                        <li><a href="javascript:void(0);" class="t-cap">About</a></li>
+                        <li><a href="javascript:void(0);" class="t-upp">FAQ</a></li>
+                        <li><a href="javascript:void(0);" class="t-cap">Sign Up</a></li>
+                        <li><a href="javascript:void(0);" class="t-cap">Log In</a></li>
+                    </ul>
+                </nav>
             </div>
-            <button class=""></button>
-            <nav>
-                <ul>
-                    <li><a href="javascript:void(0);"></a></li>
-                    <li><a href="javascript:void(0);"></a></li>
-                    <li><a href="javascript:void(0);"></a></li>
-                    <li><a href="javascript:void(0);"></a></li>
-                    <li><a href="javascript:void(0);"></a></li>
-                    <li><a href="javascript:void(0);"></a></li>
-                </ul>
-            </nav>
-        </div>
+        </header>
+        <section class="landingTitle container-fluid t-center">
+            <h1>Your Career in Web Development Starts Here</h1>
+            <h3>Our full stack curriculum is free and supported by a passionate open source community.</h3>
+            <button>View Full Curriculum</button>
+        </section>
     </main>
 </body>
+
 </html>

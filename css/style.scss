@@ -1,0 +1,54 @@
+$grey: #fdfdfd;
+$greyLetters: rgba(74, 74, 74, 0.7);
+
+body {
+  background: $grey;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+header {
+  background: $grey;
+  li {
+    a {
+      color: $greyLetters;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px;
+      &:hover {
+        color: black;
+      }
+    }
+    &:nth-child(4) {
+      border-right: 2px solid $greyLetters;
+    }
+  }
+}
+
+.landingTitle {
+  h1 {
+    font-size: 36px;
+    padding-bottom: 30px;
+    color: orange;
+  }
+  h3 {
+    font-size: 18px;
+    padding-bottom: 70px;
+    color: $greyLetters;
+  }
+  button {
+    background: #6abfc3;
+    color: white;
+    padding: 1rem 3.5rem;
+    border-radius: 0.2em;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    border: none;
+    &:hover {
+      opacity: 0.8;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,1 +1,55 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background: #fdfdfd;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+header {
+  background: #fdfdfd;
+}
+
+header li a {
+  color: rgba(74, 74, 74, 0.7);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px;
+}
+
+header li a:hover {
+  color: black;
+}
+
+header li:nth-child(4) {
+  border-right: 2px solid rgba(74, 74, 74, 0.7);
+}
+
+.landingTitle h1 {
+  font-size: 36px;
+  padding-bottom: 30px;
+  color: orange;
+}
+
+.landingTitle h3 {
+  font-size: 18px;
+  padding-bottom: 70px;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+.landingTitle button {
+  background: #6abfc3;
+  color: white;
+  padding: 1rem 3.5rem;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  border: none;
+}
+
+.landingTitle button:hover {
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -4,8 +4,8 @@ module.exports = {
   "extends": "stylelint-config-recommended",
   "ignoreFiles": [
     "app/bootstrap/**/*.less",
-    "*.sass",
-    "**/*.sass"
+    "*.scss",
+    "**/*.scss"
   ],
   "rules": {
     "at-rule-empty-line-before": ["always", {

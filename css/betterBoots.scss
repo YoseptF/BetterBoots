@@ -161,6 +161,34 @@ $danger: red;
 $black: black;
 $white: white;
 
+
+/* text style */
+
+.t-cap{
+  text-transform: capitalize;
+}
+.t-low{
+  text-transform: lowercase;
+}
+.t-upp{
+  text-transform: uppercase;
+}
+.t-none{
+  text-transform: none;
+}
+
+.t-center{
+  text-align: center;
+}
+
+.t-left{
+  text-align: left;
+}
+
+.t-right{
+  text-align: right;
+}
+
 /* mixins */
 
 @mixin colAsg($numCol) {
@@ -305,6 +333,10 @@ $white: white;
   text-decoration: none;
 }
 
+.d-none{
+  display: none;
+}
+
 .margin-center {
   margin: 0 auto;
 }
@@ -316,6 +348,10 @@ $white: white;
 .row {
   display: flex;
   @include colAsg(12);
+}
+
+.d-flex{
+  display: flex;
 }
 
 .test1, .test2, .test3, .test4, .test5, .test6 {

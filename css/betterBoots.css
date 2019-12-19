@@ -152,6 +152,35 @@ table {
 }
 
 /* variables */
+/* text style */
+.t-cap {
+  text-transform: capitalize;
+}
+
+.t-low {
+  text-transform: lowercase;
+}
+
+.t-upp {
+  text-transform: uppercase;
+}
+
+.t-none {
+  text-transform: none;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
 /* mixins */
 /* cols loops */
 .col-1 {
@@ -558,6 +587,10 @@ table {
   text-decoration: none;
 }
 
+.d-none {
+  display: none;
+}
+
 .margin-center {
   margin: 0 auto;
 }
@@ -575,6 +608,12 @@ table {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding: 0 15px;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .test1, .test2, .test3, .test4, .test5, .test6 {
