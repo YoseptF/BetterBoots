@@ -1,0 +1,307 @@
+/* stylelint-disable */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 14px;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* variables */
+$primary: orange;
+$secondary: brown;
+$info: yellow;
+$danger: red;
+$black: black;
+$white: white;
+
+/* mixins */
+
+@mixin colAsg($numCol) {
+  flex-basis: 100% / 12 * $numCol;
+  padding: 0 15px;
+}
+
+/* cols loops */
+
+@for $cols from 1 to 13 {
+  .col-#{$cols} {
+    @include colAsg($cols);
+  }
+
+  @media only screen and (min-width: 576px) {
+    .col-sm-#{$cols} {
+      @include colAsg($cols);
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .col-md-#{$cols} {
+      @include colAsg($cols);
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .col-lg-#{$cols} {
+      @include colAsg($cols);
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .col-xl-#{$cols} {
+      @include colAsg($cols);
+    }
+  }
+}
+
+/* containers decalrations */
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-fluid {
+  width: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+  .container,
+  .container-sm {
+    width: 540px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container,
+  .container-sm,
+  .container-md {
+    width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    width: 1140px;
+  }
+}
+
+/* alignments */
+
+.j-center {
+  justify-content: center;
+}
+.j-end {
+  justify-content: flex-end;
+}
+.j-start {
+  justify-content: flex-start;
+}
+.j-stretch {
+  justify-content: stretch;
+}
+.j-around {
+  justify-content: space-around;
+}
+.j-between {
+  justify-content: space-between;
+}
+.j-evenly {
+  justify-content: space-evenly;
+}
+
+.a-center {
+  align-items: center;
+}
+.a-end {
+  align-items: flex-end;
+}
+.a-start {
+  align-items: flex-start;
+}
+.a-stretch {
+  align-items: stretch;
+}
+.a-around {
+  align-items: space-around;
+}
+.a-between {
+  align-items: space-between;
+}
+.a-evenly {
+  align-items: space-evenly;
+}
+
+/* decorations */
+.no-decoration {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.col {
+  flex-grow: 1;
+}
+
+.row {
+  display: flex;
+  @include colAsg(12);
+}
