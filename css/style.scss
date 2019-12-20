@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Norse';
-    src: url('../fonts/Norse-Bold.eot');
-    src: url('../fonts/Norse-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Norse-Bold.woff2') format('woff2'),
-        url('../fonts/Norse-Bold.woff') format('woff'),
-        url('../fonts/Norse-Bold.ttf') format('truetype');
-    font-style: normal;
+  font-family: "Norse";
+  src: url("../fonts/Norse-Bold.eot");
+  src: url("../fonts/Norse-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Norse-Bold.woff2") format("woff2"),
+    url("../fonts/Norse-Bold.woff") format("woff"),
+    url("../fonts/Norse-Bold.ttf") format("truetype");
+  font-style: normal;
 }
 
 $grey: #fdfdfd;
@@ -13,7 +13,7 @@ $greyLetters: rgba(74, 74, 74, 0.7);
 $darkGrey: #4a4a4a;
 
 .norse {
-    font-family: 'Norse',helvetica ,sans-serif;
+  font-family: "Norse", helvetica, sans-serif;
 }
 
 body {
@@ -23,21 +23,38 @@ body {
 }
 
 .p-188 {
-    line-height: 1.88;
+  line-height: 1.88;
 }
 
-.nav-logo a { 
-    img {
-        height: 70px;
-    }
-    span{
-        flex: 1;
-        color: #cc9543;
-        letter-spacing: 0.4px;
-        font-size: 32px;
-        display: inline-block;
-        padding-left: 0.5em;
-    } 
+.nav-logo a {
+  img {
+    height: 70px;
+  }
+  span {
+    flex: 1;
+    color: #cc9543;
+    letter-spacing: 0.4px;
+    font-size: 32px;
+    display: inline-block;
+    padding-left: 0.5em;
+  }
+}
+
+button {
+  background: #6abfc3;
+  color: white;
+  padding: 16px 56px;
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  border: none;
+  &:hover {
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 header {
@@ -61,7 +78,7 @@ header {
 }
 
 .landingTitle {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
   h1 {
     font-size: 36px;
     padding-bottom: 30px;
@@ -72,55 +89,93 @@ header {
     padding-bottom: 70px;
     color: $greyLetters;
   }
-  button {
-    background: #6abfc3;
-    color: white;
-    padding: 16px 56px;
-    border-radius: 0.2em;
-    box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
-    font-size: 16px;
+}
+
+.background-img {
+  width: 100%;
+}
+
+.how-it-works {
+  padding-top: 100px;
+  margin-bottom: 100px;
+  h2 {
+    font-size: 24px;
+    margin-bottom: 36px;
+    color: #4a4a4a;
     font-weight: bold;
-    letter-spacing: 0.2px;
-    border: none;
-    &:hover {
-      opacity: 0.8;
-      color: #fff;
-      text-decoration: none;
+  }
+  p {
+    font-size: 18px;
+    padding-top: 18px;
+    line-height: 1.88;
+  }
+}
+
+.title {
+  padding: 16px;
+  img {
+    height: 165px;
+  }
+  h4 {
+    margin: 50px 0 20px;
+    font-size: 18px;
+    color: $darkGrey;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.learning {
+  background: #f3f3f3;
+  padding-top: 60px;
+  font-weight: bold;
+  color: $darkGrey;
+  padding-bottom: 60px;
+  h2 {
+    padding-bottom: 60px;
+    font-size: 24px;
+  }
+  & > div {
+    flex-wrap: wrap;
+  }
+  .learnButton {
+    background: #cc9543;
+  }
+  .learningTile {
+    background: white;
+    padding: 23px 46px 25px;
+    margin: 0 30px 30px 0;
+    font-size: 18px;
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
+    img {
+      height: 160px;
+    }
+    h4 {
+      margin: 18px 0 8px;
     }
   }
 }
 
-.background-img {
-    width: 100%;
-}
-
-.how-it-works {
-    padding-top: 100px;
-    margin-bottom: 100px;
-    h2 {
-        font-size: 24px;
-        margin-bottom: 36px;
-        color: #4a4a4a;
-        font-weight: bold;
-    }
-    p {
-        font-size: 18px;
-        padding-top: 18px;
-        line-height: 1.88;
-    }
-}
-
-.title {
-    padding: 16px;
-    img {
-        height: 165px;
-    }
-    h4 {
-        margin: 50px 0 20px;
-        font-size: 18px;
-        color: $darkGrey;
-    }
-    p {
-        font-size: 18px;
-    }
+.successStories {
+  font-size: 18px;
+  color: $greyLetters;
+  a{
+    color: orange;
+  }
+  figure{
+    flex-basis: 100px;
+    text-align: center;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+  }
+  .successStory{
+    flex: 1;
+  }
 }
