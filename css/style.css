@@ -169,12 +169,34 @@ header li:nth-child(4) {
   margin: 18px 0 8px;
 }
 
+.success {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background-image: linear-gradient(to bottom, #fff, #eee);
+}
+
 .successStories {
   font-size: 18px;
   color: rgba(74, 74, 74, 0.7);
 }
 
 .successStories a {
+  color: rgba(74, 74, 74, 0.7);
+  padding-top: 30px;
+}
+
+.successStories a:hover {
+  color: black;
+}
+
+.successStories div {
+  padding-bottom: 36px;
+}
+
+.successStories div a {
+  color: orange;
+}
+
+.successStories div a:hover {
   color: orange;
 }
 
@@ -201,5 +223,44 @@ header li:nth-child(4) {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.successStories .sign-up {
+  padding: 80px 40px;
+}
+
+.successStories .sign-up h3 {
+  font-size: 35.2px;
+  margin-bottom: 46px;
+}
+
+footer {
+  min-height: 277px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-links a {
+  color: rgba(74, 74, 74, 0.7);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+footer .footer-links a:hover {
+  color: black;
+}
+
+footer .logo a:hover i {
+  color: black;
+}
+
+footer .logo a i {
+  color: #cc9543;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */

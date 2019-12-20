@@ -157,11 +157,29 @@ header {
   }
 }
 
+.success {
+  background-image: linear-gradient(to bottom, #fff, #eee);
+}
+
 .successStories {
   font-size: 18px;
   color: $greyLetters;
-  a{
+
+  a {
+    color: $greyLetters;
+    padding-top: 30px;
+    &:hover {
+      color: black;
+    }
+  }
+  div {
+    padding-bottom: 36px;
+  }
+  div a{
     color: orange;
+    &:hover {
+      color: orange;
+    }
   }
   figure{
     flex-basis: 100px;
@@ -178,4 +196,42 @@ header {
   .successStory{
     flex: 1;
   }
+  .sign-up {
+    padding: 80px 40px;
+    h3 {
+      font-size: 35.2px;
+      margin-bottom: 46px;
+    }
+  }
 }
+
+footer{
+  min-height: 277px;
+  align-items: center;
+  justify-content: center;
+  .footer-links {
+    a{ 
+      color: $greyLetters;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      &:hover {
+        color: black;
+      }
+    }
+
+  }
+  .logo {
+    a {
+      &:hover {
+        i {
+          color: black;
+        }
+      }
+    i {
+      color: #cc9543;
+      font-size: 24px;
+    }
+  }
+  }
+  }
