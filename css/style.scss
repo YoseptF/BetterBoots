@@ -27,6 +27,8 @@ body {
 }
 
 .nav-logo a {
+  padding-top: 5px;
+  padding-bottom: 5px;
   img {
     height: 70px;
   }
@@ -40,7 +42,24 @@ body {
   }
 }
 
-button {
+@media screen and (max-width: 1024px){
+  nav button {
+    display: flex !important;
+    background: white;
+    border: none;
+    width: 40px;
+    span {
+      display: block;
+    height: 30px;
+    width: 60px;
+    background-color: inherit;
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%270%200%2032%2032%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20stroke%3D%27%236abfc3%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-miterlimit%3D%2710%27%20d%3D%27M4%208h24M4%2016h24M4%2024h24%27%2F%3E%3C%2Fsvg%3E);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }}
+}
+
+.button-style {
   background: #6abfc3;
   color: white;
   padding: 16px 56px;
@@ -55,6 +74,11 @@ button {
     color: #fff;
     text-decoration: none;
   }
+}
+
+.headerWrapper {
+  width: 100%;
+  max-width: 1585px;
 }
 
 header {
@@ -97,7 +121,8 @@ header {
 
 .how-it-works {
   padding-top: 100px;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
+  max-width: 625px;
   h2 {
     font-size: 24px;
     margin-bottom: 36px;
@@ -215,12 +240,15 @@ footer{
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
+      line-height: 30px;
       &:hover {
         color: black;
       }
     }
-
   }
+      .footer-links1 {
+        margin-right: 4rem;
+      }
   .logo {
     a {
       &:hover {
@@ -235,3 +263,18 @@ footer{
   }
   }
   }
+
+  .footer-logo {
+  a {
+    width: fit-content;
+    img {
+      height: 70px;
+    }
+    span {
+      color: #cc9543;
+      letter-spacing: 0.4px;
+      font-size: 32px;
+      display: inline-block;
+      padding-left: 0.5em;
+    }
+  }}

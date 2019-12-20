@@ -210,7 +210,7 @@ $white: white;
     }
   }
   .col-lg-none {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -221,8 +221,9 @@ $white: white;
     }
   }
   .col-md-none {
-    display: none;
+    display: none !important;
   }
+  
 }
 
 @media only screen and (max-width: 720px) {
@@ -232,8 +233,9 @@ $white: white;
     }
   }
   .col-sm-none {
-    display: none;
+    display: none !important;
   }
+
 }
 /* containers decalrations */
 
