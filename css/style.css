@@ -1,7 +1,11 @@
 @font-face {
   font-family: "Norse";
   src: url("../fonts/Norse-Bold.eot");
-  src: url("../fonts/Norse-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Norse-Bold.woff2") format("woff2"), url("../fonts/Norse-Bold.woff") format("woff"), url("../fonts/Norse-Bold.ttf") format("truetype");
+  src:
+  url("../fonts/Norse-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Norse-Bold.woff2") format("woff2"),
+  url("../fonts/Norse-Bold.woff") format("woff"),
+  url("../fonts/Norse-Bold.ttf") format("truetype");
   font-style: normal;
 }
 
@@ -19,9 +23,27 @@ body {
   line-height: 1.88;
 }
 
+header li a {
+  color: rgba(74, 74, 74, 0.7);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px;
+}
+
 .nav-logo a {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.title img {
+  height: 140px;
+}
+
+.successStories img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
 }
 
 .nav-logo a img {
@@ -30,8 +52,8 @@ body {
 
 .nav-logo a span {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: #cc9543;
   letter-spacing: 0.4px;
   font-size: 32px;
@@ -40,6 +62,12 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
   nav button {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -48,6 +76,7 @@ body {
     border: none;
     width: 40px;
   }
+
   nav button span {
     display: block;
     height: 30px;
@@ -65,7 +94,7 @@ body {
   padding: 16px 56px;
   border-radius: 0.2em;
   -webkit-box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.2px;
@@ -88,12 +117,27 @@ header {
   margin-bottom: 50px;
 }
 
-header li a {
+.successStories a {
+  color: rgba(74, 74, 74, 0.7);
+  padding-top: 30px;
+}
+
+.footer-logo a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.successStories div a {
+  color: orange;
+}
+
+footer .footer-links a {
   color: rgba(74, 74, 74, 0.7);
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  padding: 8px;
+  line-height: 30px;
 }
 
 header li a:hover {
@@ -147,10 +191,6 @@ header li:nth-child(4) {
   padding: 16px;
 }
 
-.title img {
-  height: 165px;
-}
-
 .title h4 {
   margin: 50px 0 20px;
   font-size: 18px;
@@ -176,11 +216,15 @@ header li:nth-child(4) {
 
 .learning > div {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .learning .learnButton {
   background: #cc9543;
+}
+
+.footer-logo a img {
+  height: 70px;
 }
 
 .learning .learningTile {
@@ -189,7 +233,7 @@ header li:nth-child(4) {
   margin: 0 30px 30px 0;
   font-size: 18px;
   -webkit-box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
 }
 
 .learning .learningTile img {
@@ -201,18 +245,20 @@ header li:nth-child(4) {
 }
 
 .success {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background-image:
+  -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#eee)
+  );
   background-image: linear-gradient(to bottom, #fff, #eee);
 }
 
 .successStories {
   font-size: 18px;
   color: rgba(74, 74, 74, 0.7);
-}
-
-.successStories a {
-  color: rgba(74, 74, 74, 0.7);
-  padding-top: 30px;
 }
 
 .successStories a:hover {
@@ -223,37 +269,27 @@ header li:nth-child(4) {
   padding-bottom: 36px;
 }
 
-.successStories div a {
-  color: orange;
-}
-
 .successStories div a:hover {
   color: orange;
 }
 
 .successStories figure {
   -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
+  flex-basis: 100px;
   text-align: center;
   padding-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.successStories img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .successStories .successStory {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .successStories .sign-up {
@@ -268,19 +304,11 @@ header li:nth-child(4) {
 footer {
   min-height: 277px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-footer .footer-links a {
-  color: rgba(74, 74, 74, 0.7);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 footer .footer-links a:hover {
@@ -291,23 +319,13 @@ footer .footer-links1 {
   margin-right: 4rem;
 }
 
-footer .logo a:hover i {
-  color: black;
-}
-
 footer .logo a i {
   color: #cc9543;
   font-size: 24px;
 }
 
-.footer-logo a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.footer-logo a img {
-  height: 70px;
+footer .logo a:hover i {
+  color: black;
 }
 
 .footer-logo a span {

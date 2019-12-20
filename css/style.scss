@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @font-face {
   font-family: "Norse";
   src: url("../fonts/Norse-Bold.eot");
@@ -43,6 +44,10 @@ body {
 }
 
 @media screen and (max-width: 1024px){
+  header {
+    position: sticky;
+    top: 0;
+  }
   nav button {
     display: flex !important;
     background: white;
@@ -139,7 +144,7 @@ header {
 .title {
   padding: 16px;
   img {
-    height: 165px;
+    height: 140px;
   }
   h4 {
     margin: 50px 0 20px;
